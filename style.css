@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Pixeloid Sans';
+    src: url('PixeloidSans.ttf');
+    font-weight: thin;
+    font-style: thin;
+}
+
+
+body{
+    font-family:Pixeloid Sans;
+    background-color: #008080;
+    color: black;
+    font-size: 14pt;
+    padding: 0;
+
+}
+
+p{
+    color: #000000;
+}
+
+input{
+    border-right: 2px solid #818181;
+    border-bottom: 2px solid #818181;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+
+    padding: 2px 10px;
+
+    text-align: center;
+}
+
+button{
+    border-right: 2px solid #818181;
+    border-bottom: 2px solid #818181;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+
+    padding: 2px 10px;
+
+    text-align: center;
+
+    margin: 5px 0px;
+    justify-self: right;
+}
+
+button:active{
+    background-color: #818181;
+    transform: scale(0.95);
+}
+
+
+
+table, tr, th, td{
+    border-collapse: collapse;
+
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    user-select: none;
+
+    background-color: #ffffff;
+
+    border-right: 2px solid #818181;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+
+    width: 250px;
+    margin: 15px auto;
+}
+
+thead tr td{
+    background-color: #010081;
+    color: #ffffff;
+
+    padding: 5px 15px;
+}
+
+td{
+    padding: 15px;
+
+    border-bottom: 2px solid #818181;
+
+}
+
+span{
+    color: #ff0081;
+}
