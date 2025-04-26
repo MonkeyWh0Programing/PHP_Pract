@@ -13,7 +13,7 @@
 
 <body>
     <?php
-    $value = $_POST['value'];
+    $value = '';
 
 
     ?>
@@ -36,41 +36,40 @@
                     </form>
                 </td>
                 <td>
-                    <p>Результат</p>
-                    <p>
+                    <h1>Результат</h1>
                         <?php 
-
+                            $value = $_POST['value'];
                             if (is_numeric( $value )) 
                             {
-                                echo "<span>$value</span> is numeric.<br>";
+                                echo "<p>\"<span>$value</span>\" is numeric.</p>";
                                 if ($value > 0)
                                 {
-                                    echo "$value greater than 0";
+                                    echo "<p><span>$value</span> greater than 0</p>";
                                 }
                                 elseif ($value < 0)
                                 {
-                                    echo "$value lower than 0";
+                                    echo "<p><span>$value</span> lower than 0</p>";
                                 }
                                 elseif ($value == 0)
                                 {
-                                    echo "0 is 0 lol";
+                                    echo "<p>0 is 0 lol</p>";
                                 }
+                                
                             }
                             elseif (!is_numeric( $value )) 
                             {
                                 // echo "\"<span>$value</span>\"  is not numeric. Is string.";
 
                                 if ($value == ''){
-                                    echo "empty.";
+                                    echo "<p>empty.</p>";
                                 }
                                 else
                                 {
-                                    echo "\"<span>$value</span>\"  is not numeric.<br>Is string.";
+                                    echo "<p>\"<span>$value</span>\"  is not numeric. Is string.</p>";
                                 }
                             }
                         
                         ?>
-                    </p>
                 </td>
             </tr>
         </tbody>
